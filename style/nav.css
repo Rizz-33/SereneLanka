@@ -1,0 +1,335 @@
+nav {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 5;
+
+}
+
+nav .box {
+    display: flex;
+    position: relative;
+}
+
+.nav-content-1 {
+    width: 200px;
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.nav-logo {
+    width: 170px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav-content-1 img {
+    width: 90px;
+}
+
+@media(max-width: 576px) {
+
+    .nav-content-1 {
+        height: 70px;
+    }
+
+    .nav-logo {
+        width: 115px;
+        height: 70px;
+    }
+
+    .nav-content-1 img {
+        width: 70px;
+
+    }
+
+}
+
+/* navigation content 2 div */
+
+.nav-content-2 {
+    width: calc(100% - 200px);
+    height: 80px;
+    /* background-color: brown; */
+}
+
+.nav-conent-2-content-1 {
+    width: 100%;
+    height: 30px;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-conent-2-content-1 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-conent-2-content-1 ul li:first-child {
+    margin-left: 0px;
+}
+
+.nav-conent-2-content-1 ul li {
+    color: rgb(0, 0, 0);
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.nav-conent-2-content-1 ul li a {
+    color: rgb(0, 0, 0);
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.nav-conent-2-content-1 ul li:nth-child(2) a {
+    color: var(--text-color);
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+}
+
+.nav-conent-2-content-1 ul li a:hover {
+    color: var(--text-color-hover);
+}
+
+.nav-conent-2-content-1 ul li a::before,
+.nav-conent-2-content-1 ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: var(--text-color-hover);
+    transition: width 0.3s;
+}
+
+.nav-conent-2-content-1 ul li a::before {
+    left: 50%;
+    transform: translateX(0%);
+}
+
+.nav-conent-2-content-1 ul li a::after {
+    right: 50%;
+    transform: translateX(0%);
+}
+
+.nav-conent-2-content-1 ul li a:hover::before,
+.nav-conent-2-content-1 ul li a:hover::after {
+    width: 50%;
+}
+
+.nav-conent-2-content-2 {
+    width: 100%;
+    height: calc(100% - 30px);
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.nav-conent-2-content-2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.nav-conent-2-content-2 ul li:first-child {
+    margin-left: 0px;
+}
+
+.nav-conent-2-content-2 ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.5s ease;
+    position: relative;
+    display: inline-block;
+    font-family: 'Abel', sans-serif;
+}
+
+.nav-conent-2-content-2 ul li a:hover {
+    color: var(--text-color-hover)
+}
+
+.nav-conent-2-content-2 ul li a.active {
+    color: var(--text-color-hover)
+}
+
+/* underline */
+
+.nav-conent-2-content-2 ul li a::before,
+.nav-conent-2-content-2 ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 0;
+    height: 3px;
+    background-color: var(--text-color-hover);
+    transition: width 0.3s;
+}
+
+.nav-conent-2-content-2 ul li a::before {
+    left: 50%;
+    transform: translateX(0%);
+}
+
+.nav-conent-2-content-2 ul li a::after {
+    right: 50%;
+    transform: translateX(0%);
+}
+
+.nav-conent-2-content-2 ul li a:hover::before,
+.nav-conent-2-content-2 ul li a:hover::after {
+    width: 50%;
+}
+
+.nav-conent-2-content-2 ul li a.active::before,
+.nav-conent-2-content-2 ul li a.active::after {
+    width: 50%;
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    display: none;
+}
+
+.menu-icon-line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(41, 41, 41);
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.nav-menu-icon-line-2,
+.nav-menu-icon-line-3 {
+    margin-top: 7px;
+    opacity: 1;
+}
+
+.menu-icon.active .nav-menu-icon-line-2 {
+    opacity: 0;
+}
+
+.menu-icon.active .nav-menu-icon-line-1 {
+    transform: rotate(315deg);
+    margin-top: 0px;
+}
+
+.menu-icon.active .nav-menu-icon-line-3 {
+    transform: rotate(-315deg);
+    margin-top: -13px;
+}
+
+@media(max-width:992px) {
+    .nav-conent-2-content-2 ul li {
+        margin-left: 35px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .nav-conent-2-content-2 ul {
+        display: none;
+    }
+
+    .nav-conent-2-content-1 ul li:first-child {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex
+    }
+
+}
+
+@media(max-width: 576px) {
+    .nav-conent-2-content-1 {
+        display: none;
+    }
+
+    .nav-conent-2-content-2 {
+        height: 100%;
+    }
+
+    .nav-content-2 {
+        height: 70px;
+    }
+}
+
+#blog-link {
+    cursor: pointer;
+}
+
+.blog {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    transition: all 1s ease;
+    height: 0;
+    margin-top: 1px;
+}
+
+.blog.active {
+    height: 330px;
+}
+
+.blog-content {
+    width: 100%;
+}
+
+.blog-list {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.blog-list:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.blog-list a {
+    font-family: 'Abel', sans-serif;
+}
+
+.blog-list p {
+    margin-left: 20px;
+    color: black;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+
+.blog-list:hover p {
+    color: var(--text-color-hover);
+}

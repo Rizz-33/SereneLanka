@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(200, 200, 200);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 250);
+}
+
+:root{
+    --text-color: rgb(24, 105, 255);
+    --text-color-hover: rgb(0, 89, 255);
+}
+
+.box {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(max-width:1200px) {
+    .box {
+        width: calc(100% - 40px);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.content {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    /* background-color: rgb(255, 255, 255); */
+}
+
+/* seciton */
+
+section{
+    width: 100%;
+    display: flex;
+}

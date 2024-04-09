@@ -1,0 +1,148 @@
+.nav-conent-2-content-2 ul li:nth-child(5) a {
+    color: var(--text-color-hover);
+}
+
+.nav-conent-2-content-2 ul li:nth-child(5) a::before,
+.nav-conent-2-content-2 ul li:nth-child(5) a::after {
+    width: 50%;
+}
+
+.menu a:nth-child(5) .menu-list {
+    background-color: var(--text-color-hover);
+    color: #ffffff;
+}
+
+.most-visited {
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 60px;
+    display: flex;
+}
+
+@media(max-width: 576px) {
+    .most-visited {
+        margin-top: 130px;
+    }
+}
+
+.most-visited-header h1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.most-visited-header p {
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.most-visited-blog-list-content{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.most-visited-blog-list {
+    width: calc(100% / 3 - 13px - 20px);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
+}
+
+.most-visited-blog-list-2 {
+    margin-left: 20px;
+}
+
+.most-visited-blog-list-3 {
+    margin-left: 20px;
+}
+
+.most-visited-blog-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.most-visited-blog-list h3 {
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.most-visited-blog-list p {
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.most-visited-blog-list-map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.most-visited-blog-list-button{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.most-visited-blog-list-button input {
+    width: 150px;
+    height: 30px;
+    background-color: var(--text-color-hover);
+    margin-top: 10px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.most-visited-blog-list-button input:hover {
+    background-color: blue;
+}
+
+
+
+
+@media(max-width:768px) {
+
+    .most-visited-blog-list-content {
+        display: block;
+    }
+
+    .most-visited-blog-list {
+        width: calc(100% - 20px);
+    }
+
+    .most-visited-blog-list-2 {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .most-visited-blog-list-3 {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .most-visited-blog-list img {
+        height: 300px;
+    }
+    
+}
+
+
+@media(max-width: 576px) {
+    .most-visited-blog-list img  {
+        height: 200px;
+    }
+}
